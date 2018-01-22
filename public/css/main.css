@@ -1,0 +1,569 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My CSS goes below here */
+
+/*
+  ===========================================================
+  Custom Styles
+  ===========================================================
+*/
+
+body {
+  background: #c9ebff;
+  color: #fff;
+  font: 400 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height: 1350px;
+  min-width: 960px;
+}
+
+/** 
+ *  centre position of div within body by moving top and left
+ *  to middle of page and then displace by half the height and the width.
+ *
+ **/ 
+.paper {
+  position: absolute;
+  height: 1300px;
+  width: 940px;
+  top: 20px;
+  
+  left: 50%;
+  margin-left: -480px;
+
+  box-shadow: 0px 10px 10px 7px rgba(0,0,0,0.15);
+}
+
+/* 
+===========================================================
+Clear Fix
+===========================================================
+*/
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  clear: both;
+  *zoom: 1;
+}
+
+/* 
+===========================================================
+Grid
+===========================================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 940px; 
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.col-5-12,
+.col-7-12 {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-5-12 {
+  width: 40%;
+}
+.col-7-12 {
+  width: 60%;
+}
+
+/* 
+  ===========================================================
+  Navigtion
+  ===========================================================
+*/
+
+.top-nav {
+  background: #037ac4;
+  width: 100%;
+}
+.top-nav nav {
+  list-style: none;
+}
+.nav-list {
+  padding-left: 40px;
+}
+.nav-item {
+  padding: 10px;
+  display: inline-block;
+  height: 100%;
+}
+.nav-item a {
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+.active-tab a {
+  font-weight: 400;
+  color: rgba(255,255,255,1); 
+}
+.active-tab {
+  border-bottom: 3px solid #fff;
+}
+
+/* 
+  ===========================================================
+  Banner
+  ===========================================================
+*/
+
+.banner {
+  position: relative;
+  background: #2facf9;
+  width: 100%;
+  height: 200px;
+  padding: 30px 50px;
+  box-shadow: 0 10px 6px 0px rgba(0,0,0,0.25);
+}
+.title {
+  display: inline-block;
+  width: 60%;
+}
+
+.image-crop {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%;
+  float: right;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 100%;
+}
+
+/* 
+  ===========================================================
+  Typography
+  ===========================================================
+*/
+
+h1 {
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 300;
+}
+h2 {
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 200;
+}
+h3 {
+  color: #2facf9;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 50px;
+}
+h4 {
+  color: #2facf9;
+  font-weight: 600;
+  margin: 20px 0;
+}
+h5 {
+  color: #555;
+  font-weight: 600;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #717171;
+}
+
+/* 
+===========================================================
+Main Content - Hello
+===========================================================
+*/
+
+.main {
+  height: 870px;
+  background: #fff;
+}
+.addressing {
+  height: 870px;
+  width: 372px;
+  background: #efefef;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.cover-letter {
+  height: 870px;
+  width: 568px;
+  padding: 30px 40px 20px 0;
+  box-shadow: -6px 0px 4px 0px rgba(0,0,0,0.15);
+}
+.cover-letter p {
+  font-size: 12px;
+  padding: 20px 20px 0px 40px; 
+  color: #717171;
+}
+.cover-letter p:last-child {
+  padding: 0 0 0 40px;
+}
+.signature {
+  margin: 30px 30px;
+}
+.sig-name {
+  margin-left: 40px;
+}
+
+
+.add {
+  width: 70%;
+  border-bottom: 1px solid #c9c9c9;
+}
+.add-item {
+  display: inline-block;
+  color: #8c8c8c;
+  font-weight: 300px;
+  margin-bottom: 5px;
+}
+.add-item:last-child {
+  padding-bottom: 20px; 
+}
+
+/*
+  ===========================================================
+  Main content - Portfolio
+  ===========================================================
+*/
+
+.project {
+  font-size: 12px;
+  height: 33.333%;
+  width: 100%;
+  text-align: center;
+}
+.project:nth-child(n+1) {
+  border-top: 1px solid #2facf9;
+}
+.project-pic {
+  height: 100%;
+}
+.project-pic img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-detail-r,
+.project-detail-l {
+  color: #717171;
+  text-align: left;
+  height: 100%;
+}
+.project-detail-l h3, 
+.project-detail-r h3 {
+  margin-left: 0px;
+}
+.project-detail-l {
+  padding: 35px 35px 20px 50px;
+}
+.project-detail-r {
+  padding: 35px 50px 20px 35px;
+}
+.project h3 {
+  margin-bottom: 20px; 
+}
+.project p {
+  margin-bottom: 20px;
+}
+.project a {
+  text-decoration: none;
+  color: #037ac4;
+}
+
+/*
+  ===========================================================
+  resume
+  ===========================================================
+*/
+
+.left-col h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.personal section .top,
+.list h3 top {
+  margin-top: 30px;
+}
+
+.left-col {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.left-col h3 {
+  margin-left: 0px;
+}
+
+.subheader {
+  width: 100%;
+  height: 15%;
+  background-color: #86888c;
+}
+.subheader p {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 30px 70px 0 70px;
+  text-align: center;
+}
+.personal {
+  position: relative;
+  height: 85%;
+  box-shadow: 6px 0px 4px 0px rgba(0,0,0,0.15);
+}
+.work {
+  height: 85%;
+  background-color: #fafafa;
+}
+.chart-container {
+  width: 250px;
+  height: auto;
+}
+.chart-container > div {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.chart-header {
+  position: relative;
+  top: 20px;
+}
+.skill-label {
+  position: relative;
+  top: 55px;
+  z-index: 1;
+  display: block;
+  color: #717171;
+  font-size: 9.5px;
+}
+#doughnuts {
+  width: 100%;
+  padding: 10px 40px;
+  text-align: center;
+}
+.doughnut-container {
+  display: inline-block;
+  height: 100%;
+  width: 17.5%;
+  margin: 5px;
+}
+
+.personal table,
+.list p {
+  font-size: 10px;
+  color: #717171;
+  text-align: left;
+}
+.personal table tr {
+  border-bottom: 1px solid #adadad;
+}
+.personal-item-header {
+  font-weight: 400;
+}
+.personal-item-data {
+  padding: 5px 10px;
+  font-weight: 300;
+}
+
+.list .top {
+  margin-top: 30px;
+}
+.list h3 {
+  margin: 0 50px 30px 50px;
+}
+
+.list-item {
+  border-left: 2px solid #2facf9;
+  margin: 0 50px 0 60px; 
+}
+.list-item .circle {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  right: 16px;
+}
+.list-item .large {
+  background-color: #B5D7EF;
+  opacity: 0.5;
+}
+.list-item .small {
+  background-color: #2facf9;
+  transform: scale(.6);
+  right: 46px;
+}
+.list-item h6,
+.list-item p {
+  margin: 0 20px 0 30px;
+  position: relative; 
+  bottom: 45px;
+}
+
+.list-item:last-child {
+  max-height: 65px;
+}
+.education .list-item {
+  max-height: 60px;
+}
+
+/* 
+  ====================
+  Hobbies
+  ====================
+*/
+
+.hobbies-row {
+  height: 100px;
+  width: 100%;
+  padding: 0;
+}
+.hobby-container {
+  display: inline-block;
+  height: 100%; 
+  width: 80px;
+  padding: 5px;
+  font-size: 9.5px;
+  color: #717171;
+  text-align: center;
+  margin: 5px;
+}
+.hobby-background {
+  height: 80px;
+  width: 100%;
+  background: #B5D7EF;
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+
+/*
+  ===========================================================
+  Footer
+  ===========================================================
+*/
+
+footer {
+  height: 185px;
+  bottom: 0;
+}
+.social {
+  text-align: center;
+}
+.link {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+.link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+.social {
+  background: #2facf9;
+  height: 135px;
+  width: 100%;
+}
+.link {
+  margin: 10px 50px;
+}
+.img-background {
+  height: 64px;
+  width: 64px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.copy {
+  text-align: center;
+  background: #037ac4;
+  height: 50px;
+  width: 100%;
+}
+.copy p {
+  color: #fff;
+  font-size: 10px;
+  display: inline-block;
+  padding: 15px 60px;
+}
