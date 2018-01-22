@@ -4,6 +4,9 @@
   "description": "A clone of the a CV found here https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot2",
   "main": "index.js",
   "scripts": {
+    "dev": "npm-run-all -p gulp-watch serve",
+    "gulp-watch": "gulp watch",
+    "serve": "nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
