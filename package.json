@@ -19,5 +19,23 @@
   "bugs": {
     "url": "https://github.com/MikeAlexMartinez/templates/issues"
   },
-  "homepage": "https://github.com/MikeAlexMartinez/templates#readme"
+  "homepage": "https://github.com/MikeAlexMartinez/templates#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-include": "^2.3.1",
+    "gulp-real-favicon": "^0.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5",
+    "npm-run-all": "^4.1.2"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "pug": "^2.0.0-rc.4"
+  }
 }
