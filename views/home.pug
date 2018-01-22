@@ -2,7 +2,7 @@ doctype html
 html
   head
     title Material Resume Clone
-    link(href='./css/main.css' rel='stylesheet' type='text/css')
+    link(href='./css/application.css' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700' rel='stylesheet')
   
   body
@@ -63,3 +63,128 @@ html
         section.personal.col-5-12
           section.left-col
             h3.top Personal
+            table
+              tbody
+                tr
+                  th(class='personal-item-header' scope='row') Name
+                  td(class='personal-item-data') Michael Martinez
+                tr
+                  th(class='personal-item-header' scope='row') Date of Birth
+                  td(class='personal-item-data') 3rd October 1987
+                tr
+                  th(class='personal-item-header' scope='row') Relationship
+                  td(class='personal-item-data') long-term partner - Unmarried
+                tr
+                  th(class='personal-item-header' scope='row') Nationality
+                  td(class='personal-item-data') British
+                tr
+                  th(class='personal-item-header' scope='row') Languages
+                  td(class='personal-item-data') English
+          section.left-col
+            h3 Skills
+            div.chart-container
+              div
+                canvas#horizontalBar
+          
+          section.left-col
+            h3 Hobbies
+
+            div.hobbies-row
+              div.hobby-container
+                div(class='hobby-background' style='padding-top: 30px;')
+                  img(src='./images/hobbies/coding.png' width="50")
+                p Coding
+              div.hobby-container
+                div(class='hobby-background')
+                  img(src='./images/hobbies/cooking.png'  style='padding-top: 2px;' width="50")
+                p Cooking
+              div.hobby-container
+                div(class='hobby-background')
+                  img(src='./images/hobbies/cycling.png' style='padding-top: 2px;' width="50")
+                p Cycling
+
+            div.hobbies-row
+              div.hobby-container
+                div(class='hobby-background')
+                  img(src='./images/hobbies/learning.png' style='padding-top: 3px;' width="54")
+                p Learning
+              div.hobby-container
+                div(class='hobby-background')
+                  img(src='./images/hobbies/board-games.png'  style='padding-top: 3px;' width="50")
+                p Board Games
+              div.hobby-container
+                div(class='hobby-background')
+                  img(src='./images/hobbies/tennis.png' style='padding-top: 3px;' width="54")
+                p Tennis
+        
+        section.work.col-7-12
+          section.list
+            h3.top Work
+
+            div.list-item
+              div.large-circle
+              div.small-circle
+              h6 Cision, Business Intelligence
+              p With their previous FP&amp;A person leaving at very short notice, I was approached by Cision to help decipher how to produce the reporting that they had had in place so that I could train their replacements. I have also become more systems-oriented assisting with the migration of one piece of accounting software to a cloud-based solution.
+            div.list-item
+              div.large-circle
+              div.small-circle
+              h6 Fintrax, Business Intelligence
+              p At Fintrax I produced a range of consumer and broader macro-level market focused retailer reporting for a range of clients including the likes of Dior, Chanel and Ralph Lauren.
+            div.list-item
+              div.large-circle
+              div.small-circle
+              h6 Gorkana, Financial Planning and Analysis
+              p I worked at the Gorkana Group for 5 years. The last two of which I helped build, maintain and distribute a range of financial reporting tools to people all over our business.
+
+          section
+            h3.chart-header Professional Skills
+            div#doughnuts
+
+          section.list.education
+            h3 Education
+
+            div.list-item
+              div.large.circle
+              div.small.circle
+              h6 Chartered Institute of Management Accounting
+              p Fully qualified in 2015, all exams being passed at the first sitting.
+            
+            div.list-item
+              div.large.circle
+              div.small.circle
+              h6 Heythrop College, University of London
+              p In 2010 I gained a 2:1 in a Philsophy and Psychology degree.
+      
+      div(class='main-page' id='portfolio-content' hidden)
+        section.project
+          div.col-5-12
+            div.project-detail-l
+              h3 ProjectMAM
+              p ProjectMaM is my personal website. Currently under development, but once completed will contain a comprehensive list of my personal projects, a personal blog, a messaging system for people to contact me, and will all be backed by a custom built CMS that utilises MongoDB to store data.
+              a(href='https://github.com/MikeAlexMartinez/project-mam') github.com/MikeAlexMartinez/project-mam
+          div.col-7-12.project-pic
+            img(src='./images/project_admin.png')
+        section.project
+          div.col-7-12.project-pic
+            img(src='./images/freecodecamp.png')
+          div.col-5-12
+            div.project-detail-r
+              h3 FreeCodeCamp
+              p In my bid to become a professional full-stack web application developer, I have been using the curriculum at FreeCodeCamp, supplemented by the <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md">guide written by github user P1xt</a>, to give myself a broad understanding of everything web dev related, and to also provide myself with a sufficiently sized project portfolio.
+              a(href='https://www.freecodecamp.org/mikealexmartinez') www.freecodecamp.org/MikeAlexMartinez
+
+        section.project
+          div.col-5-12
+            div.project-detail-l
+              h3 #OpenBankHank
+              p Hoping to leverage my knowledge of finance and accountancy, and level-up my coding skills, I'm participating in my first hackathon on the weekend of the 10th of November, 2017.
+              a(href='https://www.eventbrite.com/e/openbankhack17-railsbank-open-banking-api-hackathon-tickets-33847397477') #OpenBankHack
+          div.col-7-12.project-pic
+            img(src='./images/project_admin.png')
+      
+      footer.grid
+
+
+                
+                

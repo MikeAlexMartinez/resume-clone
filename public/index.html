@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material Resume Clone</title>
+
+    <!-- Main css file -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!-- Header section:
+      Navigation -> Tabs
+      Banner -> Name title Pic
+    -->
+    <section class="paper">
+
+      <header class="header grid">
+        
+        <!-- Navigation -->
+        <div class="container group top-nav">
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item active-tab"><a href="#" id="hello">Hello</a></li><!--
+              --><li class="nav-item"><a href="#" id="resume">Resume</a></li><!--
+              --><li class="nav-item"><a href="#" id="portfolio">Portfolio</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <!-- Banner -->
+        <section class="banner container cf">
+          <div class="title">
+            <h1>Michael Martinez</h1>
+            <h2>Web Developer</h2>
+          </div>
+          <div class="image-crop">
+            <img src="./images/portfolio.jpg" class="profile-pic">
+          </div>
+        </section>
+        
+      </header>
+      
+      <!-- Main Hello content -->
+      <div class="main page" id="hello-content">
+        <section>
+          
+          <!-- address information -->
+          <aside class="addressing col-5-12">
+            
+            <!-- To -->
+            <div class="to add">
+              <h4>To</h4>
+              <p class="add-item">My Future Boss</p>
+              <p class="add-item">My Future Employer</p>
+              <p class="add-item">Future Employer House</p>
+              <p class="add-item">Greater London</p>
+            </div>
+
+            <!-- Position -->
+            <div class="pos add">
+              <h4>Position</h4>
+              <p class="add-item">Full Stack Devloper</p>
+            </div>
+
+            <!-- Date -->
+            <div class="date add">
+              <h4>Date</h4>
+              <time datetime="2017/11/02" class="add-item">2nd November 2017</time>
+            </div>
+
+          </aside><!--
+            Cover Letter 
+          --><section class="cover-letter col-7-12">
+            <p>Dear Future Employer,</p>
+
+            <!-- Intro -->
+            <p>I'm a passionate problem-solver who loves to code and think about future. I enjoy solving new and novel challenges and am always seeking to learn new skills.</p>
+
+            <!-- about me -->
+            <p>After my Philosophy and Psychology degree I fell into accountancy while working in the finance team at my first job. Accounting is what led to me first engaging with IT as I sought to automate our reporting and to find better ways to access and distribute more of the companies data.</p>
+            
+            <!-- why it? -->
+            <p>Since engaging with IT I have found myself consistently wanting to delve deeper down the rabbit hole. I find the community engagement in open-source software developement and the ways strangers will support one another truly inspiring, and now I am seeking to start giving back to the communities I have learned so much from.</p>
+            
+            <!-- expectations -->
+            <p>With little experience in working as a part a larger software development team, I am seeking to join an organisation where I can continue my journey into IT development, so that I can learn from those around me. My ideal employer will encourage their teams to write clear, testable, well-documented code, adhereing to industry best practices, and will also be supportive of my ambitions to give back to the open-source community.</p>
+
+            <!-- end note -->
+            <p>By hiring me, you would be gaining someone who is determined to implement high quality, enduring solutions to any problems that you are faced with, and is completely commited to keep improving.</p>
+
+            <p>Yours faithfully,</p>
+            
+            <!-- Signature -->
+            <img class="signature" src="./images/signature.png">
+            
+            <!-- Name -->
+            <h5 class="sig-name">Michael Martinez</h5>
+            <p class="sig-role">Full Stack Web Developer</p>
+
+          </section>
+        </section>
+      </div>
+
+      <!-- Resume -->
+      <div class="main page" id="resume-content" hidden>
+        <section class="subheader">
+          <p>After spending the last year teaching myself a number of technologies that can be used for web application development I want to work somewhere that I can put these newly acquired skills to the test.</p>
+        </section>
+        <section class="personal col-5-12">
+          
+          <!-- Personal Details -->
+          <section class="left-col">
+            <h3 class="top">Personal</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <th class="personal-item-header" scope="row">Name</th>
+                  <td class="personal-item-data">Michael Martinez</td>
+                </tr>
+                <tr>
+                  <th class="personal-item-header" scope="row">Date of Birth</th>
+                  <td class="personal-item-data">3rd October 1987</td>
+                </tr>
+                <tr>
+                  <th class="personal-item-header" scope="row">Relationship</th>
+                  <td class="personal-item-data">Long-term partner - Unmarried</td>
+                </tr>
+                <tr>
+                  <th class="personal-item-header" scope="row">Nationality</th>
+                  <td class="personal-item-data">British</td>
+                </tr>
+                <tr>
+                  <th class="personal-item-header" scope="row">Languages</th>
+                  <td class="personal-item-data">English</td>
+                </tr>
+                <tr>
+                  <th class="personal-item-header" scope="row">Telephone</th>
+                  <td class="personal-item-data">+44 (0) 7538 922 416</td></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+
+          <!-- Skills Section -->
+          <section class="left-col">
+            <h3>Skills</h3>
+            <div class="chart-container">
+              <div>
+                <canvas id="horizontalBar"></canvas>
+              </div>
+            </div>
+          </section>
+
+          <!-- Hobbies -->
+          <!-- Coding, Cooking, Cycling, Learning, Board Games, Tennis -->
+          <section class="left-col">
+
+            <h3>Hobbies</h3>
+
+            <div class="hobbies-row">
+              <div class="hobby-container">
+                <div class="hobby-background" style="padding-top: 30px;">
+                  <img src="./images/hobbies/coding.png" width="50">
+                </div>
+                <p>Coding</p>
+              </div><!--
+
+              --><div class="hobby-container">
+                <div class="hobby-background">
+                  <img src="./images/hobbies/cooking.png" style="padding-top: 2px;" width="50">
+                </div>
+                <p>Cooking</p>
+              </div><!--
+
+              --><div class="hobby-container">
+                <div class="hobby-background">
+                  <img src="./images/hobbies/cycling.png" style="padding-top: 2px;" width="50">
+                </div>
+                <p>Cycling</p>
+              </div>
+            </div>
+
+            <div class="hobbies-row">
+              <div class="hobby-container">
+                <div class="hobby-background">
+                  <img src="./images/hobbies/learning.png"  style="padding-top: 3px;" width="54">
+                </div>
+                <p>Learning</p>
+              </div><!--
+
+              --><div class="hobby-container">
+                <div class="hobby-background">
+                  <img src="./images/hobbies/board-games.png"  style="padding-top: 3px;" width="50">
+                </div>
+                <p>Board Games</p>
+              </div><!--
+
+              --><div class="hobby-container">
+                <div class="hobby-background">
+                  <img src="./images/hobbies/tennis.png"  style="padding-top: 3px;" width="54">
+                </div>
+                <p>Tennis</p>
+              </div>
+
+            </div>
+          </section>
+        </section><!--
+        --><section class="work col-7-12">
+          
+          <!-- Work Experience -->
+          <section class="list">
+            
+            <h3 class="top">Work</h3>
+
+            <div class="list-item">
+              <div class="large circle"></div><!--
+              --><div class="small circle"></div>
+              <h6>Cision, Business Intelligence</h6>
+              <p>With their previous FP&amp;A person leaving at very short notice, I was approached by Cision to help decipher how to produce the reporting that they had had in place so that I could train their replacements. I have also become more systems-oriented assisting with the migration of one piece of accounting software to a cloud-based solution.</p>
+            </div><!--
+
+            --><div class="list-item">
+              <div class="large circle"></div><!--
+              --><div class="small circle"></div>
+              <h6>Fintrax, Business Intelligence</h6>
+              <p>At Fintrax I produced a range of consumer and broader macro-level market focused retailer reporting for a range of clients including the likes of Dior, Chanel and Ralph Lauren.</p>
+            </div><!--
+
+            --><div class="list-item">
+              <div class="large circle"></div><!--
+              --><div class="small circle"></div>
+              <h6>Gorkana, Financial Planning and Analysis</h6>
+              <p>I worked at the Gorkana Group for 5 years. The last two of which I helped build, maintain and distribute a range of financial reporting tools to people all over our business.</p>
+            </div>
+
+          </section>
+
+          <!-- section for doughnuts -->
+          <section>
+            <h3 class="chart-header">Professional Skills</h3>
+            <div id="doughnuts">
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section class="list education">
+
+            <h3>Education</h3>  
+            
+            <!-- CIMA -->
+            <div class="list-item">
+              <div class="large circle"></div><!--
+              --><div class="small circle"></div>
+              <h6>Chartered Institute of Management Accounting</h6>
+              <p>Fully qualified in 2015, all exams being passed at the first sitting.</p>
+            </div><!--
+
+              University
+            --><div class="list-item">
+              <div class="large circle"></div><!--
+              --><div class="small circle"></div>
+              <h6>Heythrop College, University of London</h6>
+              <p>In 2010 I gained a 2:1 in a Philsophy and Psychology degree.</p>
+            </div>
+            
+          </section>
+
+        </section>
+      </div>
+      
+      <!-- Portfolio -->
+      <div class="main page" id="portfolio-content" hidden>
+        
+        <section class="project">
+          <div class="col-5-12">
+            <div class="project-detail-l">
+              <h3>ProjectMaM</h3>
+              <p>ProjectMaM is my personal website. Currently under development, but once completed will contain a comprehensive list of my personal projects, a personal blog, a messaging system for people to contact me, and will all be backed by a custom built CMS that utilises MongoDB to store data.</p>
+              <a href="https://github.com/MikeAlexMartinez/project-mam">github.com/MikeAlexMartinez/project-mam</a>
+            </div>
+          </div><!--
+          --><div class="col-7-12 project-pic">
+            <img src="./images/project_admin.png">
+          </div>
+        </section>
+
+        <section class="project">
+
+          <div class="col-7-12 project-pic">
+            <img src="./images/freecodecamp.png">
+          </div><!--
+          --><div class="col-5-12">
+            <div class="project-detail-r">
+              <h3>FreeCodeCamp</h3>
+              <p>In my bid to become a professional full-stack web application developer, I have been using the curriculum at FreeCodeCamp, supplemented by the <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md">guide written by github user P1xt</a>, to give myself a broad understanding of everything web dev related, and to also provide myself with a sufficiently sized project portfolio.</p>
+              <a href="https://www.freecodecamp.org/mikealexmartinez">www.freecodecamp.org/MikeAlexMartinez</a>
+            </div>
+          </div>  
+
+        </section>
+
+        <section class="project">
+          <div class="col-5-12">
+            <div class="project-detail-l">
+              <h3>#OpenBankHack</h3>
+              <p>Hoping to leverage my knowledge of finance and accountancy, and level-up my coding skills, I'm participating in my first hackathon on the weekend of the 10th of November, 2017.</p>
+              <a href="https://www.eventbrite.com/e/openbankhack17-railsbank-open-banking-api-hackathon-tickets-33847397477">#OpenBankHack</a>  
+            </div>
+          </div><!-- 
+          --><div class="col-7-12 project-pic">
+            <img src="./images/openbankhack.jpg">
+          </div>
+        </section>  
+      </div>
+      
+      <!-- Footer -->
+      <footer class="grid">
+        
+        <!-- Links -->
+        <section class="social container cf">
+          
+          <!-- Github Link -->
+          <div class="link">
+            <a href="https://github.com/MikeAlexMartinez">
+              <img class="link-img" src="./images/github.png">
+            </a>
+          </div>
+          
+          <!-- Linkedin Link -->
+          <div class="link">
+            <a href="https://www.linkedin.com/in/michael-alexander-martinez-b9073742/">
+              <div class="img-background">
+                <img class="link-img" src="./images/linkedin.png">
+              </div>
+            </a>
+          </div>
+          
+          <!-- Twitter Link -->
+          <div class="link">
+            <a href="https://twitter.com/MikeAlMartinez">
+              <img class="link-img" src="./images/twitter.png">
+            </a>
+          </div>
+          
+        </section>
+        
+        <!-- Copyright etc -->
+        <section class="copy container cf">
+          
+          <!-- Address -->
+          <p>London, UK</p>
+          
+          <!-- Email -->
+          <p>mike.alex.martinez@gmail.com</p>
+          
+          <!-- Website -->
+          <p>ProjectMaM.com</p>
+          
+        </section>
+      </footer>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./js/resume.js"></script>
+    <script src="./js/barCharts.js"></script>
+    <script src="./js/doughnuts.js"></script>
+  </body>
+</html>
