@@ -4,13 +4,12 @@
 const express = require('express');
 const router = express.Router();
 
-// Application data
-const appData = require('../scripts/appData');
+const allRoutes = require('./allRoutes');
 
-// home route
-router.get('/', function homePage(req, res) {
+allRoutes.forEach(({method, route, fn}) => {
 
-  res.render('projects/resume-clone/home', {title: "Resume", data: appData.data });
+  router[method](route, fn);
+
 });
 
 module.exports = router;
