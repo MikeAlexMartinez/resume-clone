@@ -28976,23 +28976,23 @@ module.exports = function(Chart) {
 // Data for doughnut charts
 const doughnutData = [
   {
-    skill: "Accountancy",
+    skill: 'Accountancy',
     percent: 95
   },
   {
-    skill: "Problem-solving",
+    skill: 'Problem-solving',
     percent: 80
   },
   {
-    skill: "Communication",
+    skill: 'Communication',
     percent: 75
   },
   {
-    skill: "Planning",
+    skill: 'Planning',
     percent: 70,
   },
   {
-    skill: "Teamwork",
+    skill: 'Teamwork',
     percent: 65 
   }
 ];
@@ -29013,7 +29013,7 @@ function ready() {
 
     // data
     data: {
-      labels: ["Javascript", " ", "Node", " ", "SQL", " ", "NoSQL", " ", "HTML5", " ", "CSS3", " ", "React"],
+      labels: ['Javascript', ' ', 'Node', ' ', 'SQL', ' ', 'NoSQL', ' ', 'HTML5', ' ', 'CSS3', ' ', 'React'],
       datasets: [{
         backgroundColor: '#2facf9',
         borderColor: '#2facf9',
@@ -29061,8 +29061,8 @@ function ready() {
     
     // Append doughnut for each data point. 
     // Use container class to control chart size.
-    $(`<div class="doughnut-container" id="doughnut-container-${i}">
-        <canvas id="doughnut-${i}" class="doughnut"></canvas>
+    $(`<div class='doughnut-container' id='doughnut-container-${i}'>
+        <canvas id='doughnut-${i}' class='doughnut'></canvas>
       </div>`
     ).appendTo('#doughnuts');
   
@@ -29082,7 +29082,7 @@ function handleNavClick(evt) {
   $(node).parent().addClass('active-tab');
   
   // Update main section to show correct page
-  const target = "#" + $(node).attr('id') + "-content";
+  const target = '#' + $(node).attr('id') + '-content';
   $('.page').attr('hidden', true);
   $(target).attr('hidden', false);
 }
@@ -29091,7 +29091,7 @@ function handleNavClick(evt) {
 function addText(skill, n) {
   
   const target = `#doughnut-container-${n}`;
-  const text = `<p class="skill-label">${skill}</p>`;
+  const text = `<p class='skill-label'>${skill}</p>`;
   
   $(target).prepend(text);
 
@@ -29100,10 +29100,9 @@ function addText(skill, n) {
 function insertDoughnut(props, n) {
    
   /* adds doughnut chart with fields as defined by
-    <canvas id="doughnut-${props.n}"></canvas>
+    <canvas id='doughnut-${props.n}'></canvas>
       the props object passed in */
 
-  const skill = props.skill;
   const percent = props.percent;
   
   const data = {
@@ -29111,8 +29110,8 @@ function insertDoughnut(props, n) {
       {
         data: [percent, 100-percent],
         backgroundColor: [
-          "#2facf9",
-          "#dadada"
+          '#2facf9',
+          '#dadada'
         ],
       }]
   };
@@ -29123,7 +29122,7 @@ function insertDoughnut(props, n) {
       data: data,
       options: {
         tooltips: false,
-        cutoutPercentage: 75,
+        cutoutPercentage: 65,
         responsive: true,
         legend: {
           display: false

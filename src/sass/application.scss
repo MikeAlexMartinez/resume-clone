@@ -405,7 +405,7 @@ Main Content - Hello
 }
 .skill-label {
   position: relative;
-  top: 55px;
+  top: 65px;
   z-index: 1;
   display: block;
   color: #717171;
@@ -481,6 +481,9 @@ Main Content - Hello
 }
 .education .list-item {
   max-height: 60px;
+}
+.education {
+  margin-top: 20px;
 }
 
 /* 
