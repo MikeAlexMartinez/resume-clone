@@ -19,7 +19,7 @@ gulp.task("js", function() {
         __dirname + "/node_modules/chart.js/dist"
       ]
     })).on('error', console.log)
-    .pipe(gulp.dest("./public/js"));
+    .pipe(gulp.dest("./public/projects/js"));
 });
 
 /** 
@@ -33,7 +33,7 @@ gulp.task('sass', function() {
       includePaths: ['node_modules']
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/projects/css'));
 });
 
 gulp.task('watch', function() {
